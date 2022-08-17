@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+/*header*/
+.header {
+    background-color: #3c5353;
+    text-align: center;
+    padding: 3em;
+    color: #fff;
+    user-select: none;
+    background-image: url(./images/headerBG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.nav{
+    margin-bottom: 4;
+    display: inline;
+}
+.nav-list{
+    margin-top: 0;
+    padding: 0;
+}
+.nav-link{
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+}
+.nav-list-item{
+    list-style-type: none;
+    display: inline-block;
+    padding: 4px;
+}
+.avatar {
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    border: solid 3px #000;
+}
+.contact-button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+}
+/*projects(main)*/
+.projects {
+    user-select: none;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.project {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 1.9%;
+    width: 20%;
+}
+.project-list {
+    margin: 60px auto;
+    padding: 0;
+    width: 80%;
+}
+.project img {
+    display: block;
+    max-width: 100%;
+    width: 220px;
+    height: 120px;
+    border-radius: 4px;
+}
+.socials {
+    background-color: #3c5353;
+    padding: 30px 0;
+    text-align: center;
+    margin: 20px auto;
+    user-select: none;
+}
+.message {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.insta-button {
+    color: #fff;
+    background-color: #2cbcf9;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 15px 30px;
+}
+/*footer*/
+.footer{
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    user-select: none;
+}
+.copyright{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+.social-list{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 49%;
+}
+.social-icon{
+    list-style-type: none;
+    display: inline-block;
+}
+.social-img{
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+    border-radius: 150px;
+}
+.social-link {
+    text-decoration: none;
+}
+/*contact me*/
+.a-body {
+    background-color: #ff0039;
+    text-align: center;
+  }
+  a {
+  text-decoration: none;
+  user-select: none;
+  }
+  .a-h1 {
+    color: #182b2e;
+    user-select: none;
+    text-decoration: none;
+  }
+  .a-avatar {
+    width: 300;
+    height: 300;
+    border-radius: 150px;
+    margin-top: 60;
+    user-select: none;
+    border: 3px solid black;
+  }
+  .icons{
+    width: 50;
+    height: 50;
+    border-radius: 150px;
+    user-select: none;
+    padding: 4;
+  }
+  
