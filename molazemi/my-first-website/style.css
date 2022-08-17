@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background-color: gray;
+    user-select: none;
+  margin-left: 780;
+    margin-top: 40;
+}
+h1 {
+ text-decoration: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+  user-select: none;
+}
+.photo {
+  width: 130;
+  height: 140;
+  border-radius: 50%;
+  margin-top: 30 ;
+  border: 2px solid black;
+}
+.button {
+  width: 150;
+  background-color: 000000;
+  color: white;
+  padding: 10;
+  cursor: pointer;
+  margin-top: 4px;
+}
+section {
+  border: 2px solid black;
+  height: 270;
+    width: 400;
+  background-image: url("https://github.com/Amirmmolazemi/Amirmmolazemi.github.io/blob/main/photo/blue.jpg?raw=true")
+}
