@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+}
+
+.about-me-header {
+    text-align: center;
+    background-color: #b2564c;
+    padding: 4em 0em 5em;
+    background-image: url(../images/background-image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.nav-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+h1 {
+    color: #fff;
+}
+
+section h2 {
+    color: #000;
+    text-align: center;
+}
+
+.interests-list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.list-item {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    position: relative;
+}
+
+.list-image {
+    display: flex;
+    /* flex-direction: row; */
+    width: 300px;
+    height: 200px;
+}
+
+.list-item h2 {
+    position: relative;
+    background-position: center bottom;
+}

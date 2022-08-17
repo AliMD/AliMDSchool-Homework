@@ -1,0 +1,180 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    background-color: #b2564c;
+    padding: 4em 0em 5em;
+    background-image: url(../images/background-image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.navigation {
+    padding-bottom: 3em;
+}
+
+.nav-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.title {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.para {
+    color: #fff;
+}
+
+.contact-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 15px;
+    color: #b2564c;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.sample-list {
+    padding: 0px;
+    margin: 60px auto;
+    width: 80%;
+    list-style-type: none;
+}
+
+.sample-item {
+    display: inline-block;
+    width: 21%;
+    margin: 10px 1.8%;
+}
+
+.sample-image {
+   display: block;
+   max-width: 100%;
+   width: 3000px;
+   height: 250px;
+   border-radius: 8px;
+}
+
+.social {
+    background-color: #39414c;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+.para-2 {
+    width: 40%;
+    color: #fff;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #03a9f4;
+    border-radius: 3px;
+}
+
+.footer  {
+    width: 80%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.copyright {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+
+.social-list {
+    display: inline-block;
+    width: 49%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-item {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.social-link {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+i {
+    color: black;
+}
+
+/* about me */
+
+.about-me-header {
+    text-align: center;
+    background-color: #b2564c;
+    padding: 4em 0em 5em;
+    background-image: url(../images/background-image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.interests-list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.list-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+    height: 200px;
+}
