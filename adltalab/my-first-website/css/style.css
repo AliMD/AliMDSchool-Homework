@@ -1,0 +1,207 @@
+body{
+    margin:0;
+  }
+
+  .header{
+    padding : 3em ;
+    padding-bottom: 5em;
+    text-align: center;
+    background-color: blue;
+    color :#fff;
+    background-image: url(https://picsum.photos/id/7/1280/720);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    
+  }
+  
+  .navigation{
+    margin-bottom: 3em;
+    text-align: left;
+  }
+
+  .nav-list{
+    margin:0;
+    padding:0; 
+    list-style-type: none;
+  }
+
+ .nav-item{
+    display: inline-block;
+ }
+
+ .nav-link{
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color:rgba(62, 118, 172, .4)
+}
+
+.avatar{
+    border-radius: 50%;
+    width :150px;
+    border: 2px white solid;
+}
+.title{
+    text-transform: capitalize;   
+}
+
+.bio{
+    text-transform: capitalize;
+}
+
+.bottom{
+  display: inline-block;
+  padding : 15px 30px;
+  margin-top: 20px;
+  text-decoration :none;
+  border-radius: 5px;
+}
+.contact-link{
+
+    background-color: #fff;
+    color: black;
+}
+.contact-link:hover{
+ color: #fff;   
+ background-color: rgba(62, 118, 172,.3);
+}
+
+/* Project */
+
+/* ul*/
+.project-list{
+  padding: 0%;
+  margin: 0; 
+  width: 80%;
+ 
+  margin: 80px auto;
+}
+/* li */
+.project{
+  display: inline-block;
+  margin: 20px 1.8%;
+  width: 21%;
+  list-style-type: none;
+  
+ 
+}
+.project img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+/*social*/
+.social {
+  background-color: gray;
+  padding: 20px 0 ;
+  text-align: center;
+}
+.social p {
+  width: 50%;
+  margin: 20px auto;
+  color: #fff;
+  line-height: 1.7;
+  font: 1.2em sans-serif;
+  
+}
+.twitter-link{
+  background-color: rgb(52, 135, 231);
+  color: rgb(255, 255, 255);
+}
+.twitter-link:hover{
+  background-color: rgb(3, 116, 245);
+}
+/* Footer*/
+.footer{
+  display: block;
+  background-color: rgba(14, 14, 14, 0.856);  
+  /* width: 80%; */
+  margin: 0 auto;
+  padding: 30px 10%;
+}
+
+.copyright{
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+  color: gray;
+}
+
+.social-list{
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+  padding: 0%;
+}
+
+.social-item{
+  display: inline-block;
+  list-style-type: none;
+}
+.social-link{
+  color: gray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+/* About */
+.about{ 
+  display: block;
+  max-width: 60%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* services */
+.servises{
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  
+}
+.servises ul {
+  margin:0;
+  padding:0; 
+  list-style-type: none;
+  text-align: center;
+  
+  
+}
+.servises  li {
+  margin: 20px 20px;
+  display: inline-block;
+  text-align: center;
+
+  
+}
+/* .servises  li :hover{
+  margin: 20px 20px;
+  display: inline-block;
+  text-align: center;
+  size: 120%;
+  background-blend-mode: multiply;
+ 
+} */
+
+.servises lastli{
+  display: block;
+  margin: 200px 200px;
+  background-color: blue;
+  background-image: url(https://picsum.photos/id/247/200/200);
+  background-blend-mode: multiply;
+}
+
+.servises  a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
