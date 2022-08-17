@@ -63,22 +63,22 @@ header {
     padding: 15px 30px;
     margin-top: 20px;
     text-decoration: none;
-     border-radius: 3px;
+    border-radius: 3px;
 }
 
 .contact-link {
     color: #000;
-     background-color: yellow;
+    background-color: yellow;
 }
 
 .contact-link:hover {
     color: yellow;
-     background-color: #000;
+    background-color: #000;
 }
 
 /* projects */
 .projects {
-user-select: none;
+    user-select: none;
 }
 
 .projects-list {
