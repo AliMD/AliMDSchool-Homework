@@ -6,7 +6,7 @@ body {
     text-align: center;
     background-color: #b2564c;
     padding: 4em 0em 5em;
-    background-image: url(../images/background-image.webp);
+    background-image: url('../images/background-image.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
