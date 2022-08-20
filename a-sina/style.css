@@ -121,6 +121,10 @@ body {
 .social-link {
     text-decoration: none;
 }
+.github {
+    width: 29;
+    height: 29;
+}
 /*contact me*/
 .a-body {
     background-color: #ff0039;
