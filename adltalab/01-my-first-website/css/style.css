@@ -8,7 +8,7 @@ body{
   text-align: center;
   background-color: blue;
   color :#fff;
-  background-image: url(https://picsum.photos/id/7/1280/720);
+  background-image: url("https://picsum.photos/id/7/1280/720");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,29 +16,29 @@ body{
 }
 
 .navigation{
-    margin-bottom: 3em;
-    text-align: center;
+  margin-bottom: 3em;
+  text-align: center;
 }
 
 .nav-list{
   margin:0;
-    padding:0; 
-    list-style-type: none;
+  padding:0; 
+  list-style-type: none;
 }
 
 .nav-item{
-    display: inline-block;
+  display: inline-block;
 }
 
 .nav-link{
-    display: block;
-    color: white;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 
 /* snip1555 css for nav-item hover action   .::Find from Code-pen website::.*/
-@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url("https://fonts.googleapis.com/css?family=Muli");
 .snip1555 {
   font-family: 'Muli', Arial, sans-serif;
   font-size: 18px;
