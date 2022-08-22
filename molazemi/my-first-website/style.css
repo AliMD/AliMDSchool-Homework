@@ -50,15 +50,17 @@ body {
     flex-wrap: wrap;
     text-align: center;
 }
+.main a {
+  text-decoration: none;
+}
 .button {
     background-color: gray;
     color: yellow;
     cursor: pointer;
     width: 70px;
     display: block;
-    padding: 15px 30px;
+    padding: 15px 0px;
     margin-top: 25px;
-    text-decoration: none;
     border-radius: 3px;
     border: 1px solid #000;
     margin: 40px 10px;
