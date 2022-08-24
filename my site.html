@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Filter Effects</title>
+
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </head>
+
+  <body ng-app="cssFilters" ng-controller="AppCtrl">
+
+    <div layout="row" flex layout-fill>
+      
+      <md-content flex="20" layout="column">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2>
+              <span>CSS Filter Effects</span>
+            </h2>
+          </div>
+        </md-toolbar>
+        <md-list class="mylist" flex>       
+          <md-list-item>
+            <md-button ng-click="showCard('blur');closeRight();">blur</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('brightness');closeRight();">brightness</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('contrast');closeRight();">contrast</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('grayscale');closeRight();">grayscale</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('hueRotate');closeRight();">hue rotate</md-button>
+          </md-list-item>
+          <md-list-item >                                              
+            <md-button ng-click="showCard('invert');closeRight();">invert</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('opacity');closeRight();">opacity</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('saturate');closeRight();">saturate</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('sepia');closeRight();">sepia</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('dropShadow');closeRight();">drop shadow</md-button>
+          </md-list-item>
+          <md-list-item >
+            <md-button ng-click="showCard('all');openRight()">all</md-button>
+          </md-list-item>
+        </md-list>
+      </md-content>      
+
+
+      <md-content flex class="md-padding">
+        
+        <md-card class="mycard show" id="blur" ng-init="blur.value=2">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: blur({{blur.value|round}}px); filter: blur({{blur.value|round}}px);" />
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="blur.value=0" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex min="0" max="100" ng-model="blur.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="blur.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">blur</span>({{blur.value|round}}px);
+        <span class="token-property">filter</span>: <span class="token-function">blur</span>({{blur.value|round}}px);
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="brightness" ng-init="brightness.value=2">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: brightness({{brightness.value|round}}); filter: brightness({{brightness.value|round}});" />
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="brightness.value=1" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step=".1" min="0" max="10" ng-model="brightness.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="brightness.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">brightness</span>({{brightness.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">brightness</span>({{brightness.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="contrast" ng-init="contrast.value=2">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: contrast({{contrast.value|round}}); filter: contrast({{contrast.value|round}});">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="contrast.value=1" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step=".1" min="0" max="10" ng-model="contrast.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="contrast.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">contrast</span>({{contrast.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">contrast</span>({{contrast.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="grayscale" ng-init="grayscale.value=.5">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: grayscale({{grayscale.value|round}}); filter: grayscale({{grayscale.value|round}});">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="grayscale.value=0" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step="0.1" min="0" max="1" ng-model="grayscale.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 max=1 ng-model="grayscale.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">grayscale</span>({{grayscale.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">grayscale</span>({{grayscale.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="hueRotate" ng-init="hueRotate.value=150">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: hue-rotate({{hueRotate.value|round}}deg); filter: hue-rotate({{hueRotate.value|round}}deg);">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="hueRotate.value=0" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex setp="1" min="0" max="360" ng-model="hueRotate.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 max=360 ng-model="hueRotate.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">hue-rotate</span>({{hueRotate.value|round}}deg);
+        <span class="token-property">filter</span>: <span class="token-function">hue-rotate</span>({{hueRotate.value|round}}deg);
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="invert" ng-init="invert.value=1">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: invert({{invert.value|round}}); filter: invert({{invert.value|round}});">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="invert.value=0" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step="0.1" min="0" max="1" ng-model="invert.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="invert.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">invert</span>({{invert.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">invert</span>({{invert.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="opacity" ng-init="opacity.value=.5">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: opacity({{opacity.value|round}}); filter: opacity({{opacity.value|round}});">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="opacity.value=1" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step=".1" min="0" max="1" ng-model="opacity.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="opacity.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">opacity</span>({{opacity.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">opacity</span>({{opacity.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="saturate" ng-init="saturate.value=0">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: saturate({{saturate.value|round}}); filter: saturate({{saturate.value|round}});">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="saturate.value=1" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step=".1" min="0" max="10" ng-model="saturate.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="saturate.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">saturate</span>({{saturate.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">saturate</span>({{saturate.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="sepia" ng-init="sepia.value=.5">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter: sepia({{sepia.value|round}}); filter: sepia({{sepia.value|round}});">
+          <md-card-content>
+            <div layout>
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="sepia.value=0" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step=".1" min="0" max="1" ng-model="sepia.value" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 max=1 ng-model="sepia.value"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">sepia</span>({{sepia.value|round}});
+        <span class="token-property">filter</span>: <span class="token-function">sepia</span>({{sepia.value|round}});
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="dropShadow">
+          <img src="images/1.jpg" class="md-card-image" style="-webkit-filter:  drop-shadow({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000); filter:  drop-shadow({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000);">
+          <md-card-content>
+            <div layout ng-init="dropShadow.x=1">
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="dropShadow.x=0;" aria-label="reset">
+                  <md-tooltip>
+                    Reset
+                  </md-tooltip>
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step="" min="-100" max="100" ng-model="dropShadow.x" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" ng-model="dropShadow.x"  aria-controls="red-slider">
+              </div>
+            </div>
+
+            <div layout ng-init="dropShadow.y=1">
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="dropShadow.y=0;" aria-label="reset">
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step="" min="-100" max="100" ng-model="dropShadow.y" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="dropShadow.y"  aria-controls="red-slider">
+              </div>
+            </div>
+
+            <div layout ng-init="dropShadow.z=3">
+              <div flex="15" layout layout-align="center center">
+                <md-button class="md-icon-button" ng-click="dropShadow.z=0" aria-label="reset">
+                  <md-icon md-svg-icon="images/restore.svg"></md-icon>
+                </md-button>
+              </div>
+              <md-slider flex step="" min="0" max="100" ng-model="dropShadow.z" ></md-slider>
+              <div flex="15" layout layout-align="center center">
+                <input type="number" min=0 ng-model="dropShadow.z"  aria-controls="red-slider">
+              </div>
+            </div>
+          </md-card-content>
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">-webkit-filter</span>: <span class="token-function">drop-shadow</span>({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000);
+        <span class="token-property">filter</span>: <span class="token-function">drop-shadow</span>({{dropShadow.x|round}}px {{dropShadow.y|round}}px {{dropShadow.z|round}}px #000);
+            </div>
+          </div>
+        </md-card>
+
+        <md-card class="mycard" id="all" ng-init="blur.value1=0;brightness.value1=1;contrast.value1=1;grayscale.value1=0;hueRotate.value1=0;invert.value1=0;opacity.value1=1;saturate.value1=1;sepia.value1=0;dropShadow.x1=0;dropShadow.y1=0;dropShadow.z1=0;">
+          <img src="images/1.jpg" class="md-card-image" 
+            style="-webkit-filter: blur({{blur.value1|round}}px) 
+                  brightness({{brightness.value1|round}})
+                  contrast({{contrast.value1|round}})
+                  grayscale({{grayscale.value1|round}})
+                  hue-rotate({{hueRotate.value1|round}}deg)
+                  invert({{invert.value1|round}})
+                  opacity({{opacity.value1|round}})
+                  saturate({{saturate.value1|round}})
+                  sepia({{sepia.value1|round}})
+                  drop-shadow({{dropShadow.x1|round}}px {{dropShadow.y1|round}}px {{dropShadow.z1|round}}px #000);"
+          />        
+
+          <div class="code-area-container">
+            <div class="code-area">
+<span class="token-property">filter</span>: <span class="token-function">blur</span>({{blur.value1|round}}px)
+        <span class="token-function">brightness</span>({{brightness.value1|round}})
+        <span class="token-function">contrast</span>({{contrast.value1|round}})
+        <span class="token-function">grayscale</span>({{grayscale.value1|round}})
+        <span class="token-function">hue-rotate</span>({{hueRotate.value1|round}}deg)
+        <span class="token-function">invert</span>({{invert.value1|round}})
+        <span class="token-function">opacity</span>({{opacity.value1|round}})
+        <span class="token-function">saturate</span>({{saturate.value1|round}})
+        <span class="token-function">sepia</span>({{sepia.value1|round}})
+        <span class="token-function">drop-shadow</span>({{dropShadow.x1|round}}px {{dropShadow.y1|round}}px {{dropShadow.z1|round}}px #000);
+            </div>
+          </div>
+        </md-card>
+
+      </md-content>
+      
+      <md-content flex="20"></md-content>
+      <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" layout-padding>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">blur</div>
+          <md-slider flex min="0" max="100" ng-model="blur.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">brightness</div>
+          <md-slider flex step=".1" min="0" max="10" ng-model="brightness.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">contrast</div>
+          <md-slider flex step=".1" min="0" max="10" ng-model="contrast.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">grayscale</div>
+          <md-slider flex step="0.1" min="0" max="1" ng-model="grayscale.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">hueRotate</div>
+          <md-slider flex setp="1" min="0" max="360" ng-model="hueRotate.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">invert</div>
+          <md-slider flex step="0.1" min="0" max="1" ng-model="invert.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">opacity</div>
+          <md-slider flex step=".1" min="0" max="1" ng-model="opacity.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">saturate</div>
+          <md-slider flex step=".1" min="0" max="10" ng-model="saturate.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">sepia</div>
+          <md-slider flex step=".1" min="0" max="1" ng-model="sepia.value1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center">dropshadow</div>
+          <md-slider flex step="1" min="0" max="100" ng-model="dropShadow.x1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center"></div>
+          <md-slider flex step="1" min="0" max="100" ng-model="dropShadow.y1" ></md-slider>
+        </div>
+        <div layout>
+          <div flex="25" layout class="md-caption" layout-align="start center"></div>
+          <md-slider flex step="1" min="0" max="100" ng-model="dropShadow.z1" ></md-slider>
+        </div>
+        <div layout layout-align="center center">
+          <md-button class="md-icon-button" ng-click="blur.value1=0;brightness.value1=1;contrast.value1=1;grayscale.value1=0;hueRotate.value1=0;invert.value1=0;opacity.value1=1;saturate.value1=1;sepia.value1=0;dropShadow.x1=0;dropShadow.y1=0;dropShadow.z1=0;" aria-label="reset">
+            <md-tooltip>
+              Reset
+            </md-tooltip>
+            <md-icon md-svg-icon="images/restore.svg"></md-icon>
+          </md-button>      
+        </div>
+      </md-sidenav>
+    </div>
+
+  </body>
+</html>
