@@ -11,9 +11,16 @@ img {
 }
 
 .icon {
+
     width: 70px;
     height: 70px;
     margin-left: 800px;
+}
+
+.pic {
+    
+    width: 100px;
+    height: 100px;
 }
 
 
