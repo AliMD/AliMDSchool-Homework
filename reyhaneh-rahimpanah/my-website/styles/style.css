@@ -1,0 +1,137 @@
+body{
+  margin:0;
+  }
+ /*body-header*/ 
+.header{
+  padding: 20px;
+  text-align:center;
+  background-color: lightgrey;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+.navigation{
+  margin-bottom:4px;
+    
+}
+  
+.nav-list{
+  margin:0;
+  padding:0;
+}
+  
+.nav-item{
+  display: inline-block;
+  list-style-type: none;
+  
+}
+  
+.nav-link{
+  display: block;
+  padding:10px;
+  text-decoration: none;
+  color: black;
+}
+  
+.nav-link:hover{
+  color: blue;
+}
+  
+.avatar{
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fff;
+}
+
+.contact-link{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  background-color: #fff;
+  color: tomato;
+  border-radius: 3px;
+}
+
+/*body-main-section1*/ 
+.projects{
+  text-align: center;
+}
+
+.project-list{
+  width: 80%;
+  margin:60px auto;
+  padding: 0;
+}
+
+.project{
+  display: inline-block;
+  margin: 10px 2px;
+  width: 21%;
+  list-style-type: none;
+}
+
+.project img {
+  display: block;
+  max-width: 100%;
+  width: 160px;
+  height: 115px;
+  border-radius: 4px;
+}
+
+/*body-main-section2*/
+.social {
+  padding: 30px 0px;
+  text-align: center;
+  background-color: darkgray;
+} 
+.social a{
+ text-decoration: none;
+}
+.fallow{
+  margin-bottom: 30px;
+
+}
+
+.github{
+
+}
+
+/* footer */
+.footer{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: darkgray;
+
+}
+.copyright{
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+
+.social-list{
+  display: inline-block;
+  width: 49%;
+  padding: 0;
+}
+
+.social-item{
+  display: inline-block;
+  list-style-type: none;
+}
+
+.social-link{
+  text-decoration: none;
+  color: darkgrey;
+  margin: o 20px;
+}
+
+
