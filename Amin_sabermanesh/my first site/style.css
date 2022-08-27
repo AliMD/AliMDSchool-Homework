@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    user-select: none;
+}
+/* header items */
+.header {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    text-align: center;
+}
+/* for image background */
+.div-header{
+    background-image: url("./image/diamond.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+/* for coler over header background */
+.div-header-inner{
+    padding-top: 3em;
+    padding-bottom: 1em;
+    background-color: rgba(119, 119, 119, 0.63);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+/* profile-image */
+.avatar {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.1em solid #000;
+    box-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
+}
+body{
+    max-width: 1080px;
+    margin: auto;
+}
+/* Header title */
+.htitle{
+    margin: 0.5em;
+    font-family: monospace;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px hsla(0, 10%, 10%, 0.5);
+}
+.hatitle:link {
+    text-decoration: none;
+    color: white;
+}
+.hatitle:visited{
+    color: white;
+}
+.info{
+    font-size: x-large;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: rgb(4, 0, 59);
+    text-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
+}
+/* header's "cantact me" button */
+.contactme {
+    display: inline-block;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: darkblue;
+    border-radius: 0.2em;
+    border: 0.05em solid white;
+    scroll-behavior: auto;
+}
+/* remove underline from header "contact me" button link */
+.contactme:link {
+    text-decoration: none;
+    color: white
+}
+/* alteration of "contact me" button when mouse is over that */
+.contactme:hover {
+    text-decoration: none;
+    background-color: lightblue;
+    color: black;
+}
+/* Project list start from here */
+/* section class="Projects-list"
+    ul     class="plist" 
+    li     class="p1 pitem"
+    img    class="pic1~8" "pic"
+    p      class="ptitle1" */
+.projects-list{
+    display: inline-block;   
+}
+/* for sort and display projects list */
+.plist {
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+/* space around (pictures and title) */
+.pitem{
+    padding: 1em;
+    background-color: #d3d3d366;
+    margin: 0.2em;
+    padding: 0.4em;
+    border-radius: 0.3em;
+}
+/* project picture border and disply */
+.pic{
+    padding: 0;
+    border-radius: 0.3em;
+}
+/* projects title style */
+.plink{
+    display: block;
+    text-align: center;
+}
+.pplink{
+    margin: 0;
+}
+/* remove underline from header project title */
+.plink:link{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+/* text placed after projects list  */
+.hadith{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: ltr;
+    padding: 1%;
+    display: block;
+    background-color: #d2d2d2bd;
+    text-align: center;
+}
+.hadith-text{
+    font-size: small;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+    text-shadow: rgba(251, 255, 0, 0.37) 1px 0 10px;
+}
+.quot{
+    font-weight: bold;
+    font-size: x-small;
+    padding: 0;
+    margin: 0;
+}
+.aref{
+    font-size: xx-small;
+    padding: 0;
+    margin: 0;
+}
+/* footer items */
+.footer {
+    display: flex;
+    background-color: rgb(192, 130, 47);
+    align-items: center;
+    padding: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.social {
+    border-radius: 15%;
+    display: inline-block;
+    margin: auto;
+    margin-left: 0;
+}
+.github{
+    fill: #000;
+}
+.cright {
+    display: inline-block;
+    margin: auto;
+    margin-right: 0;
+    color: aliceblue;
+}
+.social a{
+    text-decoration: none;
+}
