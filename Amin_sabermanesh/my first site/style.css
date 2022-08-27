@@ -4,20 +4,18 @@ body{
 }
 /* header items */
 .header {
-    
     padding-top: 0em;
     padding-bottom: 0em;
     text-align: center;
 }
 /* for image background */
 .div-header{
-    background-image: url(./image/diamond.png);
+    background-image: url("./image/diamond.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     text-align: center;
-    
 }
 /* for coler over header background */
 .div-header-inner{
@@ -36,7 +34,6 @@ body{
     border-radius: 50%;
     border: 0.1em solid #000;
     box-shadow: rgba(0, 0, 0, 1) 1px 0 10px;
-    bac
 }
 body{
     max-width: 1080px;
@@ -57,7 +54,6 @@ body{
 .hatitle:visited{
     color: white;
 }
-
 .info{
     font-size: x-large;
     margin: 0.5em;
@@ -112,7 +108,6 @@ body{
     padding: 0;
     padding-top: 3%;
     padding-bottom: 3%;
-    
 }
 /* space around (pictures and title) */
 .pitem{
