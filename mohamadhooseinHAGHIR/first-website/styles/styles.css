@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+
+.heder {
+    padding:4em 0 5em;
+    background-color: aqua;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-photo/young-attractive-nude-mom-breastfeeding-hugging-her-newborn-baby-smiling-sitting-bed-home_176420-14106.jpg?size=626&ext=jpg&uid=R77070638&ga=GA1.2.360717139.1660733046');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply; 
+    
+    
+}   
+.navigation {
+    margin-bottom: 1em;
+
+}
+/*ul*/
+.nav-list {
+    margin: 0%;
+    padding: 0%;
+
+}
+/*li*/
+.nav-item {
+    list-style-type: none;
+    display: inline-block;
+
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+
+}
+
+.nav-link:hover{
+    color: #000;
+
+
+}
+
+.abr{
+
+width: 150px;
+height: 110px;
+border-radius: 80%;
+border: 3px solid #fff;
+
+}
+
+.title{ 
+    
+    text-transform: capitalize;
+    text-shadow: 1px 1px 0 hsla(0,0%,0%, .5);
+
+}
+
+.bio{
+    
+
+
+}
+
+.title{
+    color: #fff;
+    text transform:capitalize;
+
+
+}
+
+.bio{
+    color: #fff;
+
+
+}
+.contact-link {
+    color:blueviolet;
+    text-decoration: none;
+    background-color: #fff ;
+    display:inline-block;
+    padding: 15px 30px;
+    margin-top: 20px; 
+    border-radius: 3px;
+}
+
