@@ -1,1 +1,0 @@
-# AliMDSchool-Homework
