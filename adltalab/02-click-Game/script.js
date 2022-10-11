@@ -79,7 +79,7 @@
   };
 
   const resetGame = () => {
-    console.log('reset Game - score = %');
+    console.log('reset Game');
     score = initScore;
     updatescore(0);
     for (const box of boxArr) {  //clickable all elements of array
@@ -97,12 +97,12 @@
   }
 
   const bombclick = function () {  //beacuase use 'this', have to use function and can,t use arrow function
-    // console.log('boxclick');  
+    // console.log('boxclick');
     document.body.style.backgroundColor = "red";
     setTimeout(() => { document.body.style.backgroundColor = "white"; }, 100);
     if (score > 0) {
       updatescore(-10);
-      moveBox(this);  // 'this' refer to clicked box   
+      moveBox(this);  // 'this' refer to clicked box
     } else {
       gameover();
     }
@@ -123,7 +123,6 @@
       box.style.height = 3 + 'em';
       box.style.opacity = 1;
     }
-    // exit();
   };
 
   const gameover = () => {
@@ -211,6 +210,5 @@
 
   easyGameBtn.addEventListener('click', difficultyEasy);
   hardGameBtn.addEventListener('click', difficultyHard);
-
 
 })();
