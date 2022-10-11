@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
   <title>My Game</title>
 </head>
+
 <body>
-
-
-  <div class="game-container hide">
+  <div class="game-container hide ">
     <div class="score-container ">
       امتیاز:<span class="score-value"></span>
     </div>
-    <div id="pauseGame">
-      توقف بازی
-    </div>
+    <div id="pauseGame"> توقف بازی </div>
+
     <div class="box hide bomb"></div>
     <div class="box hide"></div>
     <div class="box hide"></div>
@@ -25,20 +24,23 @@
   </div>
 
   <div class="start-game-container">
-    <h4 class="start-game"> شروع بازی</h4>
-    <h6 class="easy">Easy</h6>  
-    <h6 class="hard">Hard</h6>  
+    <h3 class="start-game pointer"> شروع بازی</h3>
+    <h4 class="easy pointer">Easy</h4>
+    <h4 class="hard pointer">Hard</h4>
+    <h5>Click on the boxes </h5>
+    <h5>Do not click on the Bombs</h5>
   </div>
 
-  <div class="menu-game hide">
-    <h2 class="menu-score">امتیاز : 0</h2>
-    <h4 class="resume "> resume</h4>
-    <h4 class="reset "> Reset</h4>
-    <h5 class="exit "> خروج</h5>
+  <div id="menu" class="hide">
+    <div class="menu-content">
+      <h2 class="menu-score">امتیاز : 0</h2>
+      <h4 class="resume pointer"> resume</h4>
+      <h4 class="reset pointer "> Reset</h4>
+      <h4 class="exit pointer"> خروج</h4>
+    </div>
   </div>
-  
-
 
   <script src="script.js"></script>
 </body>
+
 </html>

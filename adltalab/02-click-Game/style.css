@@ -1,8 +1,10 @@
-.body{
-  transition: background-color 5000ms;
+.body {
+  /* transition: background-color 5000ms; */
+  margin: 0;
+  background-color: rgb(220, 220, 220);
 }
 
-.hide{
+.hide {
   /* display: none; */
   opacity: 0;
   pointer-events: none;
@@ -10,9 +12,7 @@
 }
 
 .start-game-container {
-  /* position: absolute; */
-  /* width: 4em; */
-  /* height: .5em; */
+  position: absolute;
   font-size: 3em;
   /* Method for Middeling */
   left: 0;
@@ -20,23 +20,41 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  margin-top: 3em;
+
   /* The text always in one line */
-  white-space:nowrap;
-  cursor: pointer;
+  white-space: nowrap;
+  /* cursor: pointer; */
   user-select: none;
   transition: all 150ms;
   text-align: center;
-  
+  width: 6em;
+  height: 50%;
+
 }
+
+.start-game,
+.easy,
+.hard {
+  background-color: rgba(20, 20, 20, 0.75);
+  color: white;
+  margin: 25px 5px;
+  padding: 10px 10px;
+}
+
+h5 {
+  text-align: center;
+  color: black;
+  font-size: .4em;
+  margin: 0;
+}
+
 .start-game-container.hide,
-score-container.hide,
-#pauseGame.hide
-{
+.score-container.hide,
+#pauseGame.hide {
   display: none;
 }
 
-.box{
+.box {
   width: 3em;
   height: 3em;
   background-color: #a11;
@@ -50,44 +68,58 @@ score-container.hide,
   transition: opacity 150ms, transform 150ms;
 }
 
-.bomb{
-   border-radius: 30%;
-   width: 3.3em;
-   height: 3.3em;
+.bomb {
+  border-radius: 40%;
+  width: 3.3em;
+  height: 3.3em;
 }
 
-.box.hide{
+.box.hide {
   /* transition: scale(.1); */
   transform: scale(0);
 }
 
-#pauseGame{
+#pauseGame,
+.score-container {
   float: left;
   border: solid black 1px;
+  background-color: rgba(20, 20, 20, 0.75);
+  color: white;
+  padding: 5px;
   cursor: pointer;
+  font-size: 1.5em;
 }
-#pauseGame.hide{
+
+.score-container {
+  float: right;
+  padding-left: 30px;
+  cursor: default;
+  user-select: none;
+}
+
+#pauseGame.hide {
   display: none;
 }
 
+#menu {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.75);
+}
 
-.menu-game{
-  font-size: 2em;
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  /* margin-top: -50vh; */
-  /* margin: auto; */
-  white-space: nowrap;
-  cursor: pointer;
-  user-select: none;
-  transition: all 150ms;
-  /* border: #a11 solid 1px; */
+#menu .menu-content {
   text-align: center;
-  background-color: aqua;
-  
-};
+  font-size: 1.2em;
+  color: white;
+  margin: auto;
+  margin-top: 30vh;
+  max-width: 250px;
+  padding: 30px;
+  background-color: rgba(20, 20, 20, 0.75);
+}
 
+.pointer {
+  cursor: pointer;
+}

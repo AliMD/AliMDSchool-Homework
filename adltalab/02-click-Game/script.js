@@ -9,7 +9,7 @@
   const hardGameBtn = document.querySelector('.hard');
   const easyGameBtn = document.querySelector('.easy');
 
-  const menucontainer = document.querySelector('.menu-game');
+  const menucontainer = document.querySelector('#menu');
   const gameContainer = document.querySelector('.game-container');
   const scoreContainer = document.querySelector('.score-container');
   const scoreValueElemet = document.querySelector('.score-value');
@@ -30,16 +30,6 @@
 
     updatescore(initScore); // for drawing in first
     document.body.style.backgroundColor = "white";
-    /*for (const box of boxArr) { 
-      let isFirst = true;//clickable all elements of array
-      if (isFirst) { 
-        console.log(isFirst);
-        isFirst = flase;
-        continue;
-      }
-      box.addEventListener('click', boxclick);
-      box.style.opacity = 1;
-    }*/
 
     for (let i = 0; i < boxArr.length; i++) {
       const box = boxArr[i];
@@ -62,7 +52,7 @@
     clearTimeout(moveBoxTimer);
     for (const box of boxArr) {
       //box.classList.add('hide');
-      box.style.opacity = .1;
+      box.style.opacity = .5;
     }
     menucontainer.classList.remove('hide');
     scoreContainer.classList.add('hide');
@@ -89,8 +79,9 @@
   };
 
   const resetGame = () => {
-    console.log('reset Game');
+    console.log('reset Game - score = %');
     score = initScore;
+    updatescore(0);
     for (const box of boxArr) {  //clickable all elements of array
       // box.addEventListener('click', boxclick);
       box.classList.add('hide');
@@ -126,6 +117,12 @@
     menucontainer.classList.add('hide');
     startGameContainer.classList.remove('hide');
     gameContainer.classList.add('hide');
+
+    for (const box of boxArr) {  //clickable all elements of array
+      box.style.width = 3 + 'em';
+      box.style.height = 3 + 'em';
+      box.style.opacity = 1;
+    }
     // exit();
   };
 
@@ -156,7 +153,6 @@
         gameover();
       }
     }, 150);
-
   };
 
   let boxIndex = -1;
@@ -188,19 +184,21 @@
     //resize boxes
     for (const box of boxArr) {  //clickable all elements of array
       box.style.width = 5 + 'em';
-      box.style.hight = 5 + 'em';
+      box.style.height = 5 + 'em';
+      box.style.opacity = 1;
     }
     startGame();
   };
 
   const difficultyHard = () => {
-    speed = 200;
-    initScore = 5;
+    speed = 300;
+    initScore = 10;
     console.log('Hard Mode >> speed = %s - Init Bones = %s', speed, initScore);
     //resize boxes
     for (const box of boxArr) {
       box.style.width = 2 + 'em';
-      box.style.hight = 2 + 'em';
+      box.style.height = 2 + 'em';
+      box.style.opacity = 1;
     }
     startGame();
   };
