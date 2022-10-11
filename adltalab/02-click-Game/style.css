@@ -1,0 +1,93 @@
+.body{
+  transition: background-color 5000ms;
+}
+
+.hide{
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+  /* transition: all 1s; */
+}
+
+.start-game-container {
+  /* position: absolute; */
+  /* width: 4em; */
+  /* height: .5em; */
+  font-size: 3em;
+  /* Method for Middeling */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 3em;
+  /* The text always in one line */
+  white-space:nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms;
+  text-align: center;
+  
+}
+.start-game-container.hide,
+score-container.hide,
+#pauseGame.hide
+{
+  display: none;
+}
+
+.box{
+  width: 3em;
+  height: 3em;
+  background-color: #a11;
+
+  /* for changing position, have to set position as absolute */
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 150ms, transform 150ms;
+}
+
+.bomb{
+   border-radius: 30%;
+   width: 3.3em;
+   height: 3.3em;
+}
+
+.box.hide{
+  /* transition: scale(.1); */
+  transform: scale(0);
+}
+
+#pauseGame{
+  float: left;
+  border: solid black 1px;
+  cursor: pointer;
+}
+#pauseGame.hide{
+  display: none;
+}
+
+
+.menu-game{
+  font-size: 2em;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  /* margin-top: -50vh; */
+  /* margin: auto; */
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms;
+  /* border: #a11 solid 1px; */
+  text-align: center;
+  background-color: aqua;
+  
+};
+
