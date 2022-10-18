@@ -1,0 +1,71 @@
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.game-container {
+  transition: opacity 100ms;
+}
+.start-game {
+  position: absolute;
+  width: 5em;
+  height: 1.3em;
+  font-size: 2em;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  font-family: sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 200ms;
+}
+.box {
+  width: 2em;
+  height: 2em;
+  background-color: #a11;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 200ms, transform 200ms;
+}
+.box.hide {
+  transform: scale(0.1);
+}
+#pause {
+  float: left;
+  width: 150px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: #1c313a;
+  border-radius: 25px;
+}
+#pause.hide {
+  display: none;
+}
+#continue {
+  float: left;
+  width: 150px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: #1c313a;
+  border-radius: 25px;
+}
+.score-container {
+  width: 150px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: #1c313a;
+  border-radius: 25px;
+  text-align: center;
+  user-select: none;
+}
