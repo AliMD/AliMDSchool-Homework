@@ -1,0 +1,92 @@
+body{
+    margin: 0px;   
+    background-color: rgb(39, 36, 36);
+    padding: 0px;
+    font-family: sans-serif;
+    text-align: center;  
+}
+.img-prof {
+  border: 2px solid white;  
+  border-radius: 50%;
+  margin-top: 20px;  
+  position: absolute;
+  margin-right: 100px;
+  margin-top: 80px; 
+}
+.img-back{
+    border: 2px solid white;
+    box-shadow: rgba(119, 119, 119, 0.1)0px 5px 5px 5px;
+}
+.contian{
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+
+}
+.contian a {
+    text-decoration: none;
+    color: azure;
+    border:1px solid rgb(87, 87, 230);
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: lighter;
+
+}
+.gmail a{
+    text-decoration: none;
+    color: azure;
+    border:1px solid rgb(87, 87, 230);
+    padding: 10px 41px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: lighter;
+}
+.phone a{
+    text-decoration: none;
+    color: azure;
+    border:1px solid rgb(87, 87, 230);
+    padding: 10px 39px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: lighter;
+}
+.github a{
+    text-decoration: none;
+    color: azure;
+    border:1px solid rgb(87, 87, 230);
+    padding: 10px 39px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: lighter;
+}
+.contian h2:hover   {
+  color: rgb(63, 25, 88);
+  transition: color 0.5s;
+}
+.contian h1:hover{
+    color: rgb(117, 31, 31);
+    transition: color 0.5s;
+}
+.phone a:hover{
+    border: 3px solid rgb(88, 39, 39);
+    transition: border 0.5s;
+}
+.github a:hover{
+    border: 3px solid rgb(88, 39, 39);
+    transition: border 0.5s;
+}
+.gmail a:hover{
+    border: 3px solid rgb(88, 39, 39);
+    transition: border 0.5s;
+    
+}
+p{
+    color: white;
+}
+.parag p:hover span {
+    color: #c19875;
+    transition: color 0.5s;
+}
