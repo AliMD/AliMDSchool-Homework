@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(75, 73, 73);
+}
+.contian .prfimg{
+position: absolute;
+width: 80px;
+height: 80px;
+text-align: center;
+border: 1px solid white;
+border-radius: 50%;
+z-index: 1000;
+bottom: 10px;
+transition: all 0.5s;
+}
+.contian .bckimg{
+    width: 300;
+    height: 200;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contian{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.contian-img{
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+}
+.info-contian{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.btn-a a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.btn{
+    background: transparent;
+    border: none;
+}
+.info-contian h1 span{
+    transition: all 0.5s;
+}
+.info-contian h2{
+    transition: all 0.5s    ;
+}
+.contian .info-contian h1:hover span{
+    color: rgb(255, 196, 0);
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.contian .info-contian h2:hover{
+    color: rgb(0, 105, 146);
+    transition: color 0.5s;
+}
+.btn a{
+    transition: all 0.5s;
+}
+.btn a:hover{
+    border: 1px solid rgb(0, 105, 146) ;
+    font-size: 15px;
+    transition: all 0.5s;
+
+}
+.btn a{
+    display: inline-block;
+    padding: 10px 60px;
+    margin: 8px 0px;
+}
+.contian-img .prfimg:hover{
+    border: 1px solid rgb(70, 69, 69);
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s;
+}
+.logo-1{
+    margin: 40px 20px;
+    padding: 30px;
+    cursor: pointer;  
+    display: block;
+}
+.logo-1 .tlg:hover{
+    transition: all 1s;
+    margin-bottom: 13px;
+}
+.tlg{
+    transition: all 1s;
+}
+.logo-1 .lnk:hover{
+    transition: all 1s;
+    margin-bottom: 13px;
+}
+.lnk{
+    transition: all 1s;
+}
+.logo-1 .ins:hover{
+    transition: all 1s;
+    margin-bottom: 13px;
+}
+.ins{
+    transition: all 1s;
+}
+.logo-1 .you:hover{
+    transition: all 1s;
+    margin-bottom: 13px;
+}
+.you{
+    transition: all 1s;
+}
+.logo-1 .fcb:hover{
+    transition: all 1s;
+    margin-bottom: 13px;
+}
+.fcb{
+    transition: all 1s;
+}
+.logo-1 .git:hover{
+    transition: all 1s;
+    margin-bottom: 13px;
+}
+.git{
+    transition: all 1s;
+}
+
+
+
+
