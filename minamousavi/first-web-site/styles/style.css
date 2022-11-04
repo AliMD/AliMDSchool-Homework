@@ -1,0 +1,40 @@
+
+.body{
+	margin: 0;
+}
+.header{
+	height: 300px;
+	text-align: center;
+	border-bottom: solid 3px #fff;
+	background-image: url('../images/bckg2.jpg');
+	background-size: cover;
+}
+
+.profpic{
+	margin-top: 95px;
+	border-radius: 50%;
+	border: solid 3px #fff;
+
+}
+
+.main{
+	background-color: #67533e;
+	color: #f2ded5;
+	padding: 2em 2em 3em 2em;
+	border-bottom: solid 3px #fff;
+	text-align: center;
+	font-family: Tahoma;
+}
+
+.title{
+	margin: 0;
+}
+
+.footer{
+	background-color: #373f41;
+	color: #f2ded5;
+	text-align: center;
+	padding: 0.5em 0 0.5em 0;
+}
+
+
