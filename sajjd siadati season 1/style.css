@@ -6,17 +6,19 @@ body{
     align-items: center;
     text-align: center;
     background-color: rgb(75, 73, 73);
+    margin-top: 20px;
+
 }
 .contian .prfimg{
-position: absolute;
-width: 80px;
-height: 80px;
-text-align: center;
-border: 1px solid white;
-border-radius: 50%;
-z-index: 1000;
-bottom: 10px;
-transition: all 0.5s;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 1000;
+    bottom: 10px;
+    transition: all 0.5s;
 }
 .contian .bckimg{
     width: 300;
@@ -142,7 +144,9 @@ section{
 .git{
     transition: all 1s;
 }
-
+.logo-1 a{
+    text-decoration: none;
+}
 
 
 
