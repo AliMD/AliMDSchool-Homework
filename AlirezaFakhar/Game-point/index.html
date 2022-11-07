@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>My Game</title>
+  </head>
+  <body>
+    <div class="game-container hide">
+      <button id="pause">توقف</button>
+      <button id="continue" class="hide">ادامه</button>
+      <div class="score-container">
+        <div class="emtiaz">امیتاز: <span class="score-value"></span></div>
+        <div class="timer">زمان : <span class="timer-value">0</span></div>
+      </div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+    </div>
+    <div class="start-game">
+      <div class="game-start">شروع بازی</div>
+      <input type="number" class="set-timer" />
+    </div>
+    <div class="end-game hide">
+      <div class="text-endgame">پایان</div>
+      <div class="text-emtiaz">
+        امتیاز : <span class="emtiaz-score">0</span>
+      </div>
+      <div class="start-again">دوباره بازی کنید</div>
+    </div>
+
+    <script src="./asset/javascript/script1.js"></script>
+  </body>
+</html>
