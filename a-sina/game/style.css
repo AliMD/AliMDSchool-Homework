@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, #136a8a , #267871);
+}
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+.start-game, .win {
+    position: absolute;
+    background-color: #666;
+    border-radius: 6px;
+    width: 5em;
+    height: 1.3em;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 300ms;
+}
+
+.game-container {
+    transition: all 100ms;
+}
+
+.box {
+    width: 3.5em;
+    height: 3.5em;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    background-color: #117a57;
+    border-radius: 6px;
+    cursor: crosshair;
+    transition: all 70ms;
+}
+
+.score-container{
+    font-size: 2em;
+    padding: 5px;
+    user-select: none;
+    margin: 10px;
+}
+.pause, #continue {
+    float: left;
+    font-size: 2em;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+}
+
+.pause.hide, #continue.hide {
+    display: none;
+}
+
+.pause-menu, .end-page, #win, .time, .lose{
+    position: absolute;
+    cursor: pointer;
+    width: 4em;
+    height: 1em;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.6px;
+    user-select: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.design {
+    background-color: #666;
+    border-radius: 6px;
+    width: 5em;
+    height: 1.3em;
+    text-align: center;
+    color: #ccc;
+    transition: all 300ms;
+}
+
+.reset {
+    bottom: 60px;
+    position: absolute;
+}
+
+.design:hover {
+    color: #000;
+    background-color: #c91e12;
+}
+
+#win {
+    white-space: nowrap;
+    width: 5em;
+    height: 1.5em;
+}
+.time {
+    margin: 1em auto;
+}

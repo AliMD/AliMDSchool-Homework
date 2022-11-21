@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>game</title>
+</head>
+<body>
+    <div class="game-container hide">
+        <div class="pause design">
+            توقف
+        </div>
+        <div class="pause-menu">
+            <div class="reset hide design">دوباره</div>
+            <div class="end hide design">
+                اتمام بازی
+            </div>
+        </div>
+        <div id="continue" class="hide design">
+            ادامه
+        </div>
+        <div class="score-container design">
+            امتیاز: <span class="score-value"></span>
+        </div>
+        <div class="time design">
+            <span class="sec">0</span> : <span class="min">0</span>
+        </div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+    </div>
+    <div class="end-page hide design">
+        <a href="./home.html" class="link" title="برای بازگشت کلیک کنید">با تشکر از شما</a>
+    </div>
+    <div class="lose hide design">
+        <a href="./home.html" class="link" title="تلاش مجدد">شما باختید</a>
+    </div>
+    <div class="start-game design">
+        شروع بازی
+    </div>
+    <div id="win" class="hide design">
+        <a href="./home.html" class="link" title="برای بازگشت کلیک کنید">شما برنده شدید</a>
+    </div>
+    <script src="./scrypt.js"></script>
+</body>
+</html>
