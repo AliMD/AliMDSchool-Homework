@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>MyGame</title>
+</head>
+<body>
+    <div class="game-container hide">
+        <button id="pause">
+            توقف بازی 
+        </button>
+        <button id="continue" class="hide">
+            ادامه بازی
+        </button>
+        <button id="end" class="hide">
+           پایان بازی   
+        </button>
+        <div class="score-container">
+            امتیاز: <span class="score-value"></span>
+        </div>
+        <div id="timer">
+            <span id="minute">0</span>:<span id="second"> 00</span>
+        </div>
+        <div class="box hide"></div>
+        <div class="box hide"></div> 
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+        <div class="box hide"></div>
+    </div>
+    <div class="end-page hide">
+        <a href="./index.html" class="link" title="جهت برگشت به منوی بازی روی متن کنید">ممنون از شما </a>
+    </div>
+    <div class="start-game">
+        <button class="but">
+            شروع بازی
+        </button>
+    </div>
+    <div id="win" class="hide design">
+        <a href="./index.html" class="win-link">شما برنده شدید</a>
+    </div>
+    <div id="lose" class="hide design">
+        <a href="./index.html" class="lose-link">شما باختید</a>
+    </div>
+    <div class="restart hide">
+        <button class="restart-but">
+            تلاش مجدد
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
