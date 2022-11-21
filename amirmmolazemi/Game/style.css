@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.game-container {
+    transition: all 1s;
+}
+
+.start-game {
+    position: absolute;
+    width: 4em;
+    height: 1.3em;
+    left: 2em;
+    top: 0;
+    bottom: 2em;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    font-size: 40px;
+    user-select: none;
+    white-space: nowrap;
+    transition: all 1s;
+}
+
+.but {
+    width: 200px;
+    height: 70px;
+    background-color: rgb(71, 72, 147);;
+    color: yellow;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+    margin: 1em 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.but:hover {
+    background-color: yellow;
+    color: rgb(71, 72, 147);
+    font-weight: bold;
+}
+
+.box {
+    width: 55px;
+    height: 55px;
+    background-color: red;
+    position: absolute;
+    left: 16%;
+    top: 10%;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 200ms , transform 200ms;
+}
+
+.box.hide {
+    transform: scale(0.1);
+}
+
+.score-container {
+    color: white;
+    font-size: 2em;
+}
+
+#pause.hide, #continue.hide {
+    display: none;
+}
+
+#pause, #continue, .restart-but {
+    float: left;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(71, 72, 147);;
+    color: yellow;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+    margin: 1em 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#pause:hover {
+    background-color: yellow;
+    color: rgb(71, 72, 147);
+    font-weight: bold;
+}
+
+#continue:hover {
+    background-color: yellow;
+    color: rgb(71, 72, 147);
+    font-weight: bold;
+}
+
+#end {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(71, 72, 147);
+    user-select: none;
+    color: yellow;
+    width: 200px;
+    height: 70px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 4px;
+}
+
+#end:hover {
+    background-color: yellow;
+    color: rgb(71, 72, 147);
+}
+
+.link {
+text-decoration: none;
+color: white;
+left: 0;
+top: 48%;
+bottom: 0;
+right: 0;
+position: absolute;
+margin: auto;
+cursor: pointer;
+text-align: center;
+user-select: none;
+font-size: 40px;
+font-weight: bold;
+}
+
+.restart-but {
+    float: left;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(71, 72, 147);
+    color: yellow;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+    margin: -25px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+    
+    .restart-but:hover {
+    background-color: yellow;
+    color: rgb(71, 72, 147);
+    font-weight: bold;
+}
+
+.win-link, .lose-link {
+    text-decoration: none;
+    color: white;
+    left: 0;
+    top: 48%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#timer {
+    top: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    left: 0px;
+    bottom: 1%;
+    width: 80px;
+    height: 8px;
+    user-select: none;
+    font-size: 3em;
+}
