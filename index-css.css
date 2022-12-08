@@ -1,0 +1,42 @@
+.hide {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+
+
+.start-Game-container {
+    position: absolute;
+    width: 3em;
+    height: 1.5em;
+    font-size: 2em;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    transition: all 100ms;
+    background-color: aqua;
+    border-radius: 7px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.box {
+    width: 3em;
+    height: 3em;
+    background-color: #a11;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 100ms, transform 100ms;
+}
+
+.box.hide {
+    transform: scale(0.2);
+}
