@@ -1,6 +1,8 @@
 :root {
   /* rem directly affected from root */
+  /*grids steps */
   --dl: 0.5rem;
+  /* Time */
   --dt-short: 100ms;
   --dt-mid: 300ms;
   --dt-long: 600ms;
@@ -8,8 +10,7 @@
   --color-on-background: #1a1c1e;
   --color-primary: #015fac;
   --color-on-primary: #ffffff;
-  --highlight: coral;
-  
+  --highlight: #015fac;
 
   /* define standard elevation */
   --elevation-1:
@@ -24,23 +25,32 @@
     0px 4px 2px -2px rgba(0, 0, 0, 0.2),
     0px 3px 3px 0px rgba(0, 0, 0, 0.14),
     0px 2px 7px 0px rgba(0, 0, 0, 0.12);
-    /* copied from web - not for me */
+  /* copied from web - not for me */
   --elevation-light-1:
-     0 3vw 6vw -9vw white,
-     0 1.5vw 2vw -1.5vw var(--highlight),
-     0px 1vw 2vw -2vw rgba(50, 50, 80, 0.5), 
-     0px 1vw 2vw -3vw rgba(0, 0, 0, 0.8);
+    0 3vw 6vw -9vw white,
+    0 1.5vw 2vw -1.5vw var(--highlight),
+    0px 1vw 2vw -2vw rgba(50, 50, 80, 0.5),
+    0px 1vw 2vw -3vw rgba(0, 0, 0, 0.8);
 }
 
 /* Run just in selected mode [dark] */
 @media (prefers-color-scheme: dark) {
+
   /* Code must be define with :root in this */
   :root {
     --color-background: #1a1c1e;
     --color-on-background: #e3e2e6;
     --color-primary: #a4c9ff;
     --color-on-primary: #00315d;
+    --highlight: coral;
   }
+
+  .icon-box:hover {
+    /* Text glow*/
+    text-shadow: 0 0 3px var(--highlight),
+      0 0 2px rgb(0, 0, 0);
+  }
+
 }
 
 body {
@@ -61,7 +71,7 @@ body {
 
 .icon-box {
   padding: calc(2*var(--dl));
-  /* max-width: 300px; no need- replace with flex-basis*/
+  /* max-width: 300px; << No need- replace with flex-basis*/
   box-shadow: var(--elevation-2);
   border-radius: 2%;
   flex-basis: 25%;
@@ -70,9 +80,8 @@ body {
   background-color: var(--color-background);
   color: var(--color-on-background);
   transition: background-color var(--dt-short),
-              box-shadow var(--dt-mid),
-              color var(--dt-short)
-              ;
+    box-shadow var(--dt-mid),
+    color var(--dt-short);
   ;
 }
 
@@ -81,13 +90,9 @@ body {
   /* background-color: var(--color-primary); */
   /* color: var(--color-on-primary); */
   transition: background-color var(--dt-long),
-              box-shadow var(--dt-long),
-              color var(--dt-long)
-              ;
-  /* Text glow*/
-  text-shadow:0 0 3px var(--highlight), 
-              0 0 2px rgb(0, 0, 0);
-  /* Glow Shadow */
+    box-shadow var(--dt-long),
+    color var(--dt-long);
+  /* Glowing Shadow */
   box-shadow: var(--elevation-light-1);
   z-index: 1;
 }
@@ -99,7 +104,6 @@ body {
 .icon-box .title {
   margin: 0;
   margin: 1em 0em;
-
 }
 
 .icon-box p {
