@@ -1,0 +1,356 @@
+body{
+  margin:0;
+}
+
+.header{
+  padding : 3em ;
+  padding-bottom: 5em;
+  text-align: center;
+  background-color: blue;
+  color :#fff;
+  background-image: url("https://picsum.photos/id/7/1280/720");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.navigation{
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.nav-list{
+  margin:0;
+  padding:0; 
+  list-style-type: none;
+}
+
+.nav-item{
+  display: inline-block;
+}
+
+.nav-link{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* snip1555 css for nav-item hover action   .::Find from Code-pen website::.*/
+@import url("https://fonts.googleapis.com/css?family=Muli");
+.snip1555 {
+  font-family: 'Muli', Arial, sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  line-height: 1em;
+  margin: 15px 40px;
+  text-transform: uppercase;
+}
+
+.snip1555 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 0.6em;
+  padding: 12px 15px;
+  position: relative;
+}
+
+.snip1555 li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.snip1555 li:before,
+.snip1555 li:after {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  height: 2px;
+  width: 35%;
+  background-color: #528cb3;
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+
+.snip1555 li:before {
+  top: 0;
+  left: 0;
+}
+
+.snip1555 li:after {
+  bottom: 0;
+  right: 0;
+}
+
+.snip1555 li:hover:before,
+.snip1555 li.hover:before,
+.snip1555 li:hover:after,
+.snip1555 li.hover:after {
+  opacity: 1;
+}
+
+.snip1555 li:hover:before,
+.snip1555 li.hover:before {
+  left: 65%;
+}
+
+.snip1555 li:hover:after,
+.snip1555 li.hover:after {
+  right: 65%;
+}
+
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 2px white solid;
+}
+
+.title h1{
+    text-transform: capitalize;   
+}
+
+.bio{
+    text-transform: capitalize;
+}
+
+.bottom{
+  display: inline-block;
+  padding : 15px 30px;
+  margin-top: 20px;
+  text-decoration :none;
+  border-radius: 5px;
+}
+
+.contact-link{
+
+  background-color: #fff;
+  color: black;
+}
+
+.contact-link:hover{
+ color: #fff;   
+ background-color: rgba(62, 118, 172,.3);
+}
+
+/* Project */
+
+.projects{
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  margin: 3em auto;
+  color: #fff;
+}
+
+.projects h1{
+  padding-bottom: .5em;
+}
+
+/* ul*/
+.project-list{
+  padding: 0%;
+  margin: 0; 
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* li */
+.project{
+  display: inline-block;
+  margin: .2em ;
+  width: 21%;
+  list-style-type: none;
+   
+}
+
+.project img {
+  display: block;
+  max-width: 100%;
+  /* border-radius: 10px; */
+}
+
+/*social*/
+.social {
+  background-color: gray;
+  padding: 20px 0 ;
+  text-align: center;
+}
+
+.social p {
+  width: 65%;
+  margin: 20px auto;
+  color: #fff;
+  line-height: 1.7;
+  font: 1.2em sans-serif;
+}
+
+.contact-me{
+  background-color: rgb(52, 135, 231);
+  color: rgb(255, 255, 255);
+}
+
+.contact-me:hover{
+  background-color: rgb(3, 116, 245);
+}
+
+
+/* Footer*/
+.footer{
+  display: block;
+  background-color: rgba(14, 14, 14, 0.856);  
+  margin: 0 auto;
+  padding: 30px 10%;
+}
+
+.copyright{
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+  color: gray;
+}
+
+.social-list{
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+  padding: 0%;
+}
+
+.social-item{
+  display: inline-block;
+  list-style-type: none;
+}
+
+.social-link{
+  color: gray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+
+/* About */
+.about{ 
+  display: block;
+  max-width: 60%;
+  margin: 80px auto;
+  text-align: center;
+  color: #fff;
+  /* text-transform:capitalize ; */
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+/* services */
+.servises{
+  display: block;
+  padding: 1em;
+  text-align: center;
+  background-color: gray;
+  text-transform: capitalize;
+}
+
+.servises ul {
+  margin:0;
+  padding:0; 
+  list-style-type: none;
+  text-align: center;
+}
+
+.servises  li {
+  margin: 1.5em .8em;
+  display: inline-block;
+  text-align: center;
+}
+
+.servises  a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*snip1561 css hover action for My-project image list  .::Find and copied from Code-pen website::. */
+.snip1561 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 10%;
+  background: #700877;
+  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+}
+
+.snip1561 img,
+.snip1561:before,
+.snip1561:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1561 img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.snip1561:before,
+.snip1561:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.snip1561:before {
+  width: 60px;
+  height: 1px;
+  left: 100%;
+}
+
+.snip1561:after {
+  height: 60px;
+  width: 1px;
+  top: 0%;
+}
+
+.snip1561 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1561:hover img,
+.snip1561.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.snip1561:hover:before,
+.snip1561.hover:before,
+.snip1561:hover:after,
+.snip1561.hover:after {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+}
