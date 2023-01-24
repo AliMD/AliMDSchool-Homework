@@ -1,10 +1,14 @@
+:root {
+  --box-border-radius : 8px;
+}
+
 body {
   font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
   font-size: 81.25%;
 }
 
 .adl-btn {
-  appearance:none;
+  appearance:none;  /* reset all property */
   color: rgba(26, 115, 232, 1);
   text-align: center;
   background-color: #fff;
@@ -13,8 +17,10 @@ body {
   border-radius: 4px ;
   padding : 8px 16px;
   user-select: none;
+  -webkit-user-select: none;  /* for older browser */
   cursor: pointer;
   font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+  transition: background-color 150ms;
 }
 
 .adl-btn.dark {
@@ -29,8 +35,8 @@ body {
 }
 
 .adl-btn:active {
-  box-shadow:
-    0 1px 2px 0 rgba(0, 0, 0, 0.3),
+  box-shadow:  /* chrome shadow style */
+    0 1px 1px 0 rgba(0, 0, 0, 0.3),
     0 3px 6px 2px rgba(0, 0, 0, 0.15)
   ;
 }
@@ -61,7 +67,7 @@ body{
     0 1px 2px 0 rgba(0, 0, 0, 0.3),
     0 3px 6px 2px rgba(0, 0, 0, 0.15)
   ;
-  border-radius: 8px;
+  border-radius: var(--box-border-radius);
   min-width: 500px;
   max-width: 700px;
   background-color: #fff;
@@ -96,6 +102,7 @@ body{
   padding: 15px 20px;
   cursor: pointer;
   font-weight: 600;
+  transition: background-color 200ms;
 }
 
 .adl-item.dark{
@@ -107,9 +114,22 @@ body{
   border-top-color: rgb(218, 218, 219);
 }
 
+.adl-item.last:hover{
+  border-radius:0px 0px var(--box-border-radius) var(--box-border-radius);
+}
+
+.adl-item.last:not(:hover){
+  border-radius:0px 0px var(--box-border-radius) var(--box-border-radius);
+}
+
+
 .adl-item.dark:hover{
   background: rgb(63, 64, 66);
   border-top-color: rgb(83, 83, 85);
+}
+
+.adl-item.dark.last:hover{
+  border-radius:0px 0px var(--box-border-radius) var(--box-border-radius);
 }
 
 .account-status{
@@ -136,5 +156,34 @@ body{
   text-align: left;
   display: flex;
   align-items:center;
+}
+
+.blueArea{
+  background-color: skyblue;
+  height: 400px;
+  padding-top: 50px ;
+}
+
+.cloud{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 50%;
+  box-shadow:
+    0 -10px 5px -7px #666,
+    50px 0 0 -3px #fff,
+    50px -5px 5px -3px #666,
+    -50px 0 0 8px #fff,
+    -54px -5px 5px 4px #166,
+    -65px 50px 0 10px #fff,
+    -69px 55px 5px 5px #666,
+    130px 0px 0 10px #fff,
+    132px -2px 5px 10px #666,
+    110px 50px 0 10px #fff,
+    113px 52px 5px 10px #666,
+    10px 80px 0 10px #fff,
+    10px 82px 5px 10px #666
+  ;
 }
 
