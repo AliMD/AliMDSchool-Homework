@@ -1,0 +1,39 @@
+.adl-button {
+  color: rgba(26,115,232,1) ;
+  text-align :center;
+  background-color: #fff;
+  font-weight: 600;
+  border: 1px solid rgba(218,220,224,1);
+  border-radius: 4px ;
+  padding : 8px 16px;
+}
+
+.adl-button:hover {
+  background-color: #f8faff;
+  border-color: #d2e3fc;
+}
+
+.adl-button-dark {
+  color: rgba(138,180,248,1) ;
+  text-align :center;
+  background-color: #292a2d;
+  font-weight: 600;
+  border: 1px solid rgba(95,99,104,1);
+  border-radius: 4px ;
+  padding : 8px 16px;
+}
+
+.adl-button-dark:hover {
+  background-color: #31353c;
+  border-color: #5f6368;
+}
+body{
+  text-align:center;
+}
+.darkMode{
+  color: white;
+  background-color: #292a2d;
+  padding:30px;
+  margin:20px 0px;
+
+}
