@@ -115,13 +115,8 @@ body{
 }
 
 .adl-item.last:hover{
-  border-radius:0px 0px var(--box-border-radius) var(--box-border-radius);
+  /* border-radius:0px 0px var(--box-border-radius) var(--box-border-radius); */
 }
-
-.adl-item.last:not(:hover){
-  border-radius:0px 0px var(--box-border-radius) var(--box-border-radius);
-}
-
 
 .adl-item.dark:hover{
   background: rgb(63, 64, 66);
@@ -165,25 +160,48 @@ body{
 }
 
 .cloud{
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 100px;
   height: 100px;
   background-color: white;
-  margin: 50px auto;
+  /* margin: 50px auto; */
   border-radius: 50%;
+  border: none;
   box-shadow:
-    0 -10px 5px -7px #666,
+    0 -10px 5px -7px #166,
     50px 0 0 -3px #fff,
-    50px -5px 5px -3px #666,
+    50px -5px 5px -3px #166,
     -50px 0 0 8px #fff,
     -54px -5px 5px 4px #166,
     -65px 50px 0 10px #fff,
-    -69px 55px 5px 5px #666,
+    -69px 55px 5px 5px #166,
     130px 0px 0 10px #fff,
-    132px -2px 5px 10px #666,
+    132px -2px 5px 10px #166,
     110px 50px 0 10px #fff,
-    113px 52px 5px 10px #666,
+    113px 52px 5px 10px #166,
     10px 80px 0 10px #fff,
-    10px 82px 5px 10px #666
+    10px 82px 5px 10px #166
   ;
+  transition:left 1s, top 1s ,box-shadow 200ms,background-color 200ms;
 }
 
+.cloud:hover{
+  background-color: #dcebff;
+  box-shadow:
+    0 -10px 5px -7px blue,
+    50px 0 0 -3px #dcebff,
+    50px -5px 5px -3px blue,
+    -50px 0 0 8px #dcebff,
+    -54px -5px 5px 4px blue,
+    -65px 50px 0 10px #dcebff,
+    -69px 55px 5px 5px blue,
+    130px 0px 0 10px #dcebff,
+    132px -2px 5px 10px blue,
+    110px 50px 0 10px #dcebff,
+    113px 52px 5px 10px blue,
+    10px 80px 0 10px #dcebff,
+    10px 82px 5px 10px blue
+  ;
+}
