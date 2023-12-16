@@ -1,0 +1,11 @@
+p{
+  font-size: 35px;
+}
+p:firt-child {
+  font-size: 20px;
+}
+
+p:last-child {
+  font-size: 18px;
+  
+}

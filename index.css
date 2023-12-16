@@ -1,0 +1,241 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 100%/2.0 Helvetica ;
+}
+
+.header {
+  padding: 3em 0 5em;
+  text-align: center;
+  background-color: #fa2;
+  background-image: url('../image/background-home.jpg');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation {
+  margin-bottom: 3em;
+}
+
+/*ul*/
+.nav-list {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/*li*/
+.nav-item {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #b2564c;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.title {
+  display: block;
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 0 hsla(0,0%,0%, .5);
+}
+
+.bio {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 3px; 
+}
+
+.contact-link {
+  background-color: #fff;
+  color: #b2564c; 
+}
+
+/* projects */
+.projects {
+
+}
+
+.projects-list {
+  padding: 0;
+  margin: 100px auto;
+  width: 80%;
+  font-size: 40px;
+}
+
+.project {
+  display: inline-block;
+  width: 21%;
+  margin: 10px 1.7%;
+  list-style-type: none;
+}
+
+.project img {
+  display: block;
+  max-width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project img.active {
+  position: fixed;
+  width: 350px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: scale(2);
+}
+
+.socials {
+  background-color: #39414c;
+  padding: 60px;
+  text-align: center;
+}
+
+
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.copyright {
+  display: inline-block;
+  text-align: right;
+  width: 49%;
+  color: gray;
+}
+
+.social-list {
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.social-link {
+  color: gray;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.img {
+  width: 20px;
+}
+
+/* about kazem moghadasan */
+.box {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+}
+
+.jobs {
+
+}
+
+.good {
+  margin: 100px auto 100px;
+  font-size: 40px;
+}
+
+/* form */
+.form {
+  max-width: 425px;
+  margin: 25px auto;
+}
+
+.form-line{
+
+}
+
+.label {
+  color: #123;
+  text-transform: capitalize;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #aed;
+}
+
+.text {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.form-button {
+  padding: 15px 50px;
+  border: 0;
+  background: #f9a;
+  color: #ffa;
+  border-radius: 3px;
+}
+
+.hours {
+  width: 400px;
+  margin: 100px auto 0;
+  border: 1px solid #caa;
+  color: #777;
+}
+
+.hours caption {
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.hours td,
+.hours th {
+  border: 1px solid #ccc;
+}
+
+.hours td {
+  text-align: center;
+  padding: 15px 20px;
+}
