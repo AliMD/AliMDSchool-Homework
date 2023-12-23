@@ -1,0 +1,41 @@
+:root {
+  --gap-size: 130px;
+  --size: 150px;
+  --size-: -100px;
+  --alpha: 80%;
+  --C1: rgba(255, 0, 0, var(--alpha));
+  --C2: rgba(0, 255, 0, var(--alpha));
+  --C3: rgba(0, 0, 255, var(--alpha));
+  --C4: rgba(255, 255, 0, var(--alpha));
+  --C5: rgba(255, 0, 255, var(--alpha));
+  --C6: rgba(0, 255, 255, var(--alpha));
+  --C7: rgba(255, 255, 150, var(--alpha));
+  --C8: rgba(150, 150, 150, var(--alpha));
+  --C9: rgba(10, 40, 0, var(--alpha));
+  --C10: rgba(255, 150, 0, var(--alpha));
+  --C11: rgba(100, 0, 10, var(--alpha));
+  --C12: rgba(255, 100, 100, var(--alpha));
+}
+
+body{
+  background-color: rgba(100, 100, 100);
+}
+
+.color-pallete {
+  width: var(--size);
+  height: var(--size);
+  margin: 20px auto;
+  background-color: var(--C2);
+  border-radius: 50%;
+  box-shadow: calc(-1* var(--gap-size)) 0 0 0 var(--C1),
+    calc(1* var(--gap-size)) 0 0 0 var(--C3),
+    calc(-1* var(--gap-size)) var(--gap-size) 0 0 var(--C4),
+    0 var(--gap-size) 0 0 var(--C5),
+    var(--gap-size) calc(1* var(--gap-size)) 0 0 var(--C6),
+    calc(-1* var(--gap-size)) calc(2* var(--gap-size)) 0 0 var(--C7),
+    0 calc(2* var(--gap-size)) 0 0 var(--C8),
+    calc(1* var(--gap-size)) calc(2* var(--gap-size)) 0 0 var(--C9),
+    calc(-1* var(--gap-size)) calc(3* var(--gap-size)) 0 0 var(--C10),
+    0 calc(3* var(--gap-size)) 0 0 var(--C11),
+    calc(1* var(--gap-size)) calc(3* var(--gap-size)) 0 0 var(--C12);
+}

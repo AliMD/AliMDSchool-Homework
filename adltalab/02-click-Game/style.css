@@ -1,0 +1,125 @@
+.body {
+  /* transition: background-color 5000ms; */
+  margin: 0;
+  background-color: rgb(220, 220, 220);
+}
+
+.hide {
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
+  /* transition: all 1s; */
+}
+
+.start-game-container {
+  position: absolute;
+  font-size: 3em;
+  /* Method for Middeling */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  /* The text always in one line */
+  white-space: nowrap;
+  /* cursor: pointer; */
+  user-select: none;
+  transition: all 150ms;
+  text-align: center;
+  width: 6em;
+  height: 50%;
+
+}
+
+.start-game,
+.easy,
+.hard {
+  background-color: rgba(20, 20, 20, 0.75);
+  color: white;
+  margin: 25px 5px;
+  padding: 10px 10px;
+}
+
+h5 {
+  text-align: center;
+  color: black;
+  font-size: .4em;
+  margin: 0;
+}
+
+.start-game-container.hide,
+.score-container.hide,
+#pauseGame.hide {
+  display: none;
+}
+
+.box {
+  width: 3em;
+  height: 3em;
+  background-color: #a11;
+
+  /* for changing position, have to set position as absolute */
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 150ms, transform 150ms;
+}
+
+.bomb {
+  border-radius: 40%;
+  width: 3.3em;
+  height: 3.3em;
+}
+
+.box.hide {
+  /* transition: scale(.1); */
+  transform: scale(0);
+}
+
+#pauseGame,
+.score-container {
+  float: left;
+  border: solid black 1px;
+  background-color: rgba(20, 20, 20, 0.75);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.score-container {
+  float: right;
+  padding-left: 30px;
+  cursor: default;
+  user-select: none;
+}
+
+#pauseGame.hide {
+  display: none;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+#menu .menu-content {
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  margin: auto;
+  margin-top: 30vh;
+  max-width: 250px;
+  padding: 30px;
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+.pointer {
+  cursor: pointer;
+}
